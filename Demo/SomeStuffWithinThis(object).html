@@ -18,6 +18,11 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 	
+	    function text(node, arr){
+	      node.appendChild( document.createTextNode(arr.join('')) );
+	      return node;
+	    }
+	
 	    $('.x_container').xrhyme({
 	        navigationSelector : '.anchor a',
 	        anchorMode : true,
@@ -26,18 +31,18 @@
 	        easing : 'easeOutExpo',
 	        animeComplete : function(){
 	            var that = this;
-	            var ox = $('<div></div>');
+	            var fragment = document.createDocumentFragment();
 	            for(prop in that){
 	                if(that.hasOwnProperty(prop)){
-	                    if( !(typeof(that[prop])).match('object') ){
-	                        ox.append( $('<span></span>').append(prop +' : '+ that[prop]) );
+	                    if(typeof(that[prop])!=='object' ){
+	                        fragment.appendChild( text(document.createElement('span'), [prop, ' : ', that[prop] ] ) );
 	                    }
 	                }
 	            }
 	            for(prop in that.offset){
-	                ox.append( $('<span></span>').append('offset.'+ prop +' : '+ that.offset[prop]) );
+	                fragment.appendChild( text(document.createElement('span'), ['offset.', prop, ' : ', that.offset[prop] ] ) );
 	            }
-	            $('#This').html(ox);
+	            $('#This').html(fragment);
 	        }
 	    });
 	});
