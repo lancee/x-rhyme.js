@@ -196,6 +196,7 @@
                 // If options is not a object...
             }
         });
+        
     };
 	
 })(jQuery);
