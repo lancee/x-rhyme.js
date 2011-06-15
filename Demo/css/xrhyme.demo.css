@@ -28,30 +28,30 @@
 
 /*custom style*/
 * {
-	margin: 0;
-	padding: 0;
-	border: none;
-	outline: none;
-	font-size: 100%;
-	list-style: none;
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
 
 body,button,input {
-	-webkit-font-smoothing: subpixel-antialiased;
-	font-smooth: always;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smooth: always;
 }
 
 ::-moz-focus-inner {
-	border: none;
-	padding: 0;
+    border: none;
+    padding: 0;
 }
 
 /* Selections */
@@ -87,14 +87,14 @@ a:active {
 
 html {
     height:100%;
-	background: transparent;
+    background: transparent;
 }
 
 body {
     height:100%;
     background: #eee;
-	font: normal 12px/1.5 HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
-	color: #f1f1f1;
+    font: normal 12px/1.5 HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    color: #f1f1f1;
 }
 
 
