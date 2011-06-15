@@ -20,7 +20,7 @@
         // Private method
         var fn = {};
         
-        me.$x_cont = $(xcontent).addClass('x_container');
+        me.$x_cont = $(xcontent).addClass('x_container clearfix');
         
         // Add a reverse reference to the DOM object
         me.$x_cont.data('X-Rhyme', me);
@@ -70,7 +70,7 @@
                                     me.options.animeComplete.apply(me, [k,i]);
                             }
                         });
-                        e.preventDefault();
+                        (e.preventDefault)?e.preventDefault():e.returnValue = false;
                     });
                 });
             }
@@ -127,19 +127,19 @@
         };
         
         // Scrolling page with mousewheel
-        fn.mouseWheel = function(moz_e) {
-            var e = window.event || moz_e;
+        fn.mouseWheel = function(e) {
+            e = e || window.event;
             var speed = e.detail ? e.detail * 40 : e.wheelDelta * (-1);
             speed *= me.options.wheelSpeed;
             var left = speed + me.$x_wrap.scrollLeft();
             me.$x_wrap.scrollLeft(left);
             fn.frontier(speed);
-            e.preventDefault();
+            return false;
         };
         
         // Scrolling page with keyboard
-        fn.keyScroll = function(moz_e) {
-            var e = window.event || moz_e;
+        fn.keyScroll = function(e) {
+            e = e || window.event;
             switch(e.keyCode) {
                 case 37:
                 me.$x_wrap.scrollLeft(me.$x_wrap.scrollLeft() - me.perWidth),

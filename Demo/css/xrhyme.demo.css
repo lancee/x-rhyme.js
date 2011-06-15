@@ -1,17 +1,29 @@
 .x_wrapper{
     overflow: hidden;
+    width: 100%;
 }
 
 .x_container{
-    float: left;
     width: 99999px;
     display: block;
 }
 
 .x_item{
     float: left;
-    display: inline;
+    display: inline-block;
 }
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
 /*above required*/
 
 /*custom style*/
