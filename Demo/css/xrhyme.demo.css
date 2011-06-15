@@ -1,14 +1,14 @@
-.x_wrapper{
+.x_wrapper {
     overflow: hidden;
     width: 100%;
 }
 
-.x_container{
+.x_container {
     width: 99999px;
     display: block;
 }
 
-.x_item{
+.x_item {
     float: left;
     display: inline-block;
 }
@@ -57,22 +57,22 @@ body,button,input {
 /* Selections */
 
 ::selection {
-	background: rgba(0,0,0,.5);
-	color: #fff;
-	text-shadow: none;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: none;
 }
 
 ::-moz-selection {
-	background: rgba(0,0,0,.5);
-	color: #fff;
-	text-shadow: none;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-shadow: none;
 }
 
 /* Anchors */
 
 a, a:link, a:visited {
-	cursor: pointer;
-	color: #777;
+    cursor: pointer;
+    color: #777;
 }
 
 a:hover, a:focus {
@@ -101,6 +101,7 @@ body {
 #Wrapper {
     padding: 30px 0;
 }
+
 header {
     width: 1280px;
     position: fixed;
@@ -135,7 +136,7 @@ nav ul li a {
     margin: 50px 0;
     background: #fcfcfc;
 }
-.x_item{
+.x_item {
     width: 700px;
     height: 400px;
     border-right: 2px dashed #333;

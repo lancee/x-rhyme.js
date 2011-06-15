@@ -1,14 +1,14 @@
-.x_wrapper{
+.x_wrapper {
     overflow: hidden;
     width: 100%;
 }
 
-.x_container{
+.x_container {
     width: 99999px;
     display: block;
 }
 
-.x_item{
+.x_item {
     float: left;
     display: inline-block;
 }
