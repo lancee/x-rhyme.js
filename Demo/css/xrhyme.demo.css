@@ -4,24 +4,13 @@
 }
 
 .x_container {
+    overflow: hidden;
     width: 99999px;
-    display: block;
 }
 
 .x_item {
     float: left;
-    display: inline-block;
-}
-
-.clearfix {
-    zoom: 1;
-}
-.clearfix:after {
-    content: ' ';
-    clear: both;
-    height: 0;
-    display: block;
-    visibility: hidden;
+    display: inline;
 }
 
 /*above required*/
@@ -59,13 +48,22 @@ body,button,input {
 ::selection {
     background: rgba(0,0,0,.5);
     color: #fff;
-    text-shadow: none;
 }
 
 ::-moz-selection {
     background: rgba(0,0,0,.5);
     color: #fff;
-    text-shadow: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
 }
 
 /* Anchors */
@@ -99,22 +97,21 @@ body {
 
 
 #Wrapper {
-    padding: 30px 0;
+    
 }
 
 header {
     width: 1280px;
     position: fixed;
     margin-left: 20px;
-    z-index: 99;
 }
 header h1 {
-    font: 36px/48px "Lucida Grande", Verdana, sans-serif;
+    font: 36px/70px 'Lucida Grande', Verdana, sans-serif;
+    text-shadow: #fff 0 1px 1px;
 }
 
 nav {
     float: left;
-    margin-top: -15px;
 }
 nav ul li {
     float: left;
@@ -133,7 +130,7 @@ nav ul li a {
 }
 
 #XContainer {
-    margin: 50px 0;
+    margin-top: 70px;
     background: #fcfcfc;
 }
 .x_item {
@@ -145,34 +142,35 @@ article {
     padding: 0 20px;
 }
 article h2 {
-    margin: 10px 0;
-    font: 24px/36px "Lucida Grande", Verdana, sans-serif;
+    padding: 10px 0;
+    font: 24px/1.5 'Lucida Grande', Verdana, sans-serif;
     color: #333;
 }
 article p {
-    margin: 10px 0;
     padding: 100px 0;
 }
 .anchor {
-    
+    font-weight: bold;
+    text-align: center;
 }
 .anchor a {
     display: block;
     width: 50px;
     height: 50px;
     line-height: 50px;
-    font-weight: bold;
-    text-align: center;
     background-color: #333;
     border-radius: 25px;
     margin: 10px auto;
+    -webkit-box-shadow: #111 0px 0px 3px;
+    -moz-box-shadow: #111 0px 0px 3px;
+    box-shadow: #111 0px 0px 3px;
 }
 
 #This {
     font-size: 12px;
-    line-height: 36px;
+    line-height: 70px;
     color: #ff0000;
 }
-#This span {
-    margin-right: 10px;
+#This span{
+    margin-right: 20px;
 }

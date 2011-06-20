@@ -20,7 +20,7 @@
         // Private method
         var fn = {};
         
-        me.$x_cont = $(xcontent).addClass('x_container clearfix');
+        me.$x_cont = $(xcontent).addClass('x_container');
         
         // Add a reverse reference to the DOM object
         me.$x_cont.data('X-Rhyme', me);
@@ -55,7 +55,7 @@
             
             if(me.options.navigationSelector) {
                 $(me.options.navigationSelector).each(function(i) {
-                    var k = me.options.anchorMode ? $(this).attr('href').replace("#","") : i;
+                    var k = me.options.anchorMode ? $(this).attr('href').replace('#','') : i;
                     $(this).bind('click', function(e) {
                     
                         // Smooth scrolling to an anchor
@@ -78,7 +78,7 @@
             window.onresize = fn.resetContent;
             document.onkeydown = fn.keyScroll;
             if($.browser.mozilla) {
-                document.addEventListener("DOMMouseScroll", fn.mouseWheel, false);
+                document.addEventListener('DOMMouseScroll', fn.mouseWheel, false);
             }else{
                 document.onmousewheel = fn.mouseWheel;
             }

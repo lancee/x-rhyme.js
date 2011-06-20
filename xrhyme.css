@@ -1,25 +1,20 @@
+/*
+Style required.
+Simple formula for getting block formatting context & hasLayout trigger;
+display: inline;-just for 'IE Double Margin Bug'.
+*/
+
 .x_wrapper {
     overflow: hidden;
     width: 100%;
 }
 
 .x_container {
+    overflow: hidden;
     width: 99999px;
-    display: block;
 }
 
 .x_item {
     float: left;
-    display: inline-block;
-}
-
-.clearfix {
-    zoom: 1;
-}
-.clearfix:after {
-    content: ' ';
-    clear: both;
-    height: 0;
-    display: block;
-    visibility: hidden;
+/*    display: inline;*/
 }
