@@ -67,7 +67,7 @@
                             complete: function() {
                                 me.endsFlag = fn.endsFlag();
                                 if($.isFunction(me.options.animeComplete))
-                                    me.options.animeComplete.apply(me, [k,i]);
+                                    me.options.animeComplete.call(me, k, i);
                             }
                         });
                         (e.preventDefault)?e.preventDefault():e.returnValue = false;
