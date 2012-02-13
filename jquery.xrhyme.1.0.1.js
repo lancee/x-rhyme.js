@@ -1,9 +1,9 @@
 /*
- * jQuery X-Rhyme v 1.0
+ * jQuery X-Rhyme v 1.0.1
  *
  * Nice work for horizontal websites :>
  *
- * Copyright (c) 2011, lancee LY
+ * Copyright (c) 2011 ~ 2012, lancee LY
  *
  * http://xrhy.me/
  *
