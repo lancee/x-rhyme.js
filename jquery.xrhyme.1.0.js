@@ -10,7 +10,9 @@
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
 
-(function($) {
+!(function($) {
+
+    "use strict"
 
     $.xrhyme = function(xcontent, options) {
     
@@ -56,7 +58,7 @@
             if(me.options.navigationSelector) {
                 $(me.options.navigationSelector).each(function(i) {
                     var k = me.options.anchorMode ? $(this).attr('href').replace('#','') : i;
-                    $(this).bind('click', function(e) {
+                    $(this).on('click', function(e) {
                     
                         // Smooth scrolling to an anchor
                         me.$x_wrap.stop().animate({ scrollLeft: me.offset[k] },
