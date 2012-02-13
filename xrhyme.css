@@ -5,16 +5,16 @@ display: inline;-just for 'IE Double Margin Bug'.
 */
 
 .x_wrapper {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .x_container {
-    overflow: hidden;
-    width: 99999px;
+  overflow: hidden;
+  width: 99999px;
 }
 
 .x_item {
-    float: left;
-/*    display: inline;*/
+  float: left;
+/*display: inline;*/
 }

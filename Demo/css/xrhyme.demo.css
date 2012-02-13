@@ -1,80 +1,115 @@
 .x_wrapper {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .x_container {
-    overflow: hidden;
-    width: 99999px;
+  overflow: hidden;
+  width: 99999px;
 }
 
 .x_item {
-    float: left;
-    display: inline;
+  float: left;
+  display: inline;
 }
 
 /*above required*/
 
 /*custom style*/
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-size: 100%;
-    list-style: none;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
-body,button,input {
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-smooth: always;
+body, button, input, select, textarea {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smooth: always;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+ol, ul, li {
+  list-style: none;
 }
 
 ::-moz-focus-inner {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 /* Selections */
 
 ::selection {
-    background: rgba(0,0,0,.5);
-    color: #fff;
+  background: rgba(0,0,0,.5);
+  color: #fff;
 }
 
 ::-moz-selection {
-    background: rgba(0,0,0,.5);
-    color: #fff;
+  background: rgba(0,0,0,.5);
+  color: #fff;
 }
 
 .clearfix {
-    zoom: 1;
+  zoom: 1;
 }
 .clearfix:after {
-    content: ' ';
-    clear: both;
-    height: 0;
-    display: block;
-    visibility: hidden;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 /* Anchors */
 
 a, a:link, a:visited {
-    cursor: pointer;
-    color: #777;
+  cursor: pointer;
+  color: #777;
 }
 
 a:hover, a:focus {
-    color: #ff0000
+  color: #ff0000;
 }
 
 a:active {
@@ -84,93 +119,95 @@ a:active {
 /* Background */
 
 html {
-    height:100%;
-    background: transparent;
+  height:100%;
+  background: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
-    height:100%;
-    background: #eee;
-    font: normal 12px/1.5 HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
-    color: #f1f1f1;
+  height:100%;
+  background: #eee;
+  font: normal 12px/1.5 HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+  color: #f1f1f1;
 }
 
 
 #Wrapper {
-    
+
 }
 
 header {
-    width: 1280px;
-    position: fixed;
-    margin-left: 20px;
+  width: 1280px;
+  position: fixed;
+  margin-left: 20px;
 }
 header h1 {
-    font: 36px/70px 'Lucida Grande', Verdana, sans-serif;
-    text-shadow: #fff 0 1px 1px;
+  font: 36px/70px 'Lucida Grande', Verdana, sans-serif;
+  text-shadow: #fff 0 1px 1px;
 }
 
 nav {
-    float: left;
+  float: left;
 }
 nav ul li {
-    float: left;
-    display: inline;
-    margin-right: 20px;
+  float: left;
+  display: inline;
+  margin-right: 20px;
 }
 nav ul li a {
-    float: left;
-    width: 50px;
-    height: 50px;
-    font-weight: bold;
-    line-height: 50px;
-    text-align: center;
-    background-color: #333;
-    border-radius: 25px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 25px;
 }
 
 #XContainer {
-    margin-top: 70px;
-    background: #fcfcfc;
+  margin-top: 70px;
+  background: #fcfcfc;
 }
 .x_item {
-    width: 700px;
-    height: 400px;
-    border-right: 2px dashed #333;
+  width: 700px;
+  height: 400px;
+  border-right: 2px dashed #333;
 }
 article {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 article h2 {
-    padding: 10px 0;
-    font: 24px/1.5 'Lucida Grande', Verdana, sans-serif;
-    color: #333;
+  padding: 10px 0;
+  font: 24px/1.5 'Lucida Grande', Verdana, sans-serif;
+  color: #333;
 }
 article p {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 .anchor {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 .anchor a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #333;
-    border-radius: 25px;
-    margin: 10px auto;
-    -webkit-box-shadow: #111 0px 0px 3px;
-    -moz-box-shadow: #111 0px 0px 3px;
-    box-shadow: #111 0px 0px 3px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #333;
+  border-radius: 25px;
+  margin: 10px auto;
+  -webkit-box-shadow: #111 0px 0px 3px;
+  -moz-box-shadow: #111 0px 0px 3px;
+  box-shadow: #111 0px 0px 3px;
 }
 
 #This {
-    font-size: 12px;
-    line-height: 70px;
-    color: #ff0000;
+  font-size: 12px;
+  line-height: 70px;
+  color: #ff0000;
 }
 #This span{
-    margin-right: 20px;
+  margin-right: 20px;
 }
