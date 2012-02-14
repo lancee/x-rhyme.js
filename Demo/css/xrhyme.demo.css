@@ -106,6 +106,7 @@ ol, ul, li {
 a, a:link, a:visited {
   cursor: pointer;
   color: #777;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
