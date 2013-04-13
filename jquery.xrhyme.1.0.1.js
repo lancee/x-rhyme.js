@@ -3,11 +3,11 @@
  *
  * Nice work for horizontal websites :>
  *
- * Copyright (c) 2011 ~ 2012, lancee LY
+ * Copyright (c) 2011 ~ 2013, lancee LY
  *
  * http://xrhy.me/
  *
- * Dual licensed under the MIT or GPL Version 2 licenses.
+ * Dual licensed under the MIT or GPL Version 3 licenses.
  */
 
 !(function($) {
@@ -185,10 +185,10 @@
     };
 
     $.fn.xrhyme = function(options, callback) {
-        var xrhyme = $(this).data('X-Rhyme');
 
         // Prevent multiple initializations
         return this.each(function(i) {
+            var xrhyme = $(this).data('X-Rhyme');
             if((typeof(options)).match('object|undefined')) {
                 if(!xrhyme) {
                     xrhyme = new $.xrhyme(this, options);
